@@ -10,7 +10,6 @@
 }
 /* === Header ===== */
 
-
 .header {
   background-color: rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(
@@ -34,27 +33,28 @@
   border-bottom: 1px solid rgba(161, 161, 161, 0.5);
 }
 
+@media screen and (max-width: 767px) {
+  .header .container {
+    position: relative;
 
-.header .container{
-  position: relative;
-
-  min-height: 40px;
+    min-height: 40px;
+  }
 }
 
-.header-navigation{
+.header-navigation {
   display: none;
 }
 
-.header-burger{
-background-color: transparent;
-border: none;
-position: absolute;
-right: 0;
-bottom: -10%;
+.header-burger {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  bottom: -10%;
 }
 
-.header-icon{
-  fill: var(--secondary-color)
+.header-icon {
+  fill: var(--secondary-color);
 }
 .active {
   position: relative;
@@ -85,7 +85,6 @@ bottom: -10%;
   /* gap: 40px; */
   justify-content: end;
 }
-
 
 /* Hero */
 .hero {
